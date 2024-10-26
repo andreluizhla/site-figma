@@ -1,43 +1,46 @@
 *{
-    transition: .2s linear;
     padding: 0px;
     margin: 0px;
     border: none;
     outline: none;
     font-optical-sizing: auto;
+    transition: .2s linear;
 }
 
 :root{
-    --bg: #DEF7FF
+    --bg: #DEF7FF;
+    --menu: linear-gradient(#DEF7FF, #4CB1FB 60%);
+    --top-bot: #1D3240;
+    --color1: #fff;
 }
+/*
+Para um talvez uso futuro:
 
 html{
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
 }
-
+*/
 body{
     background-color: var(--bg);
     display: block;
 }
-
-.header {
+.header{
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
 }
-
 .navbar{
     position: absolute;
-    top: 100%;
-    right: -100%;
-    background: #fff;
-    width: 30rem;
-    height: calc(50vh - 9.5rem);
+    top: 64px;
+    left: -100%;
+    background: var(--menu);
+    width: 13rem;
+    height: calc(100vh - 9.5rem);
 }
 
-.navbar .active{
-    right: 0;
+.active{
+    left: 0%;
 }
 
 .navbar a{
@@ -46,13 +49,21 @@ body{
 }
 
 nav > div{
-    display: flex;
+    display: inline-grid;
+    cursor: pointer;
+    justify-content: space-between;
 }
 
+#logo-menu > img{
+    width: 60px;
+}
 
 div#logo > img{
-    border-radius: 75%;
     width: 150px;
+}
+
+.logo{
+    border-radius: 75%;
 }
 
 .noticia {
@@ -65,7 +76,11 @@ img {
     max-width: 300px;
 }
 
-footer, footer > a > i, footer > a{
-    color: #fff;
-    background-color: black;
+header, footer{
+    background-color: var(--top-bot);
+}
+
+header, header > div > a, header > div > button, footer, footer > a > i, footer > a{
+    background-color: var(--top-bot);
+    color: var(--color1);
 }
