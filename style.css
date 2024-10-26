@@ -2,13 +2,60 @@
     transition: .2s linear;
     padding: 0px;
     margin: 0px;
+    border: none;
+    outline: none;
+    font-optical-sizing: auto;
 }
+
+:root{
+    --bg: #DEF7FF
+}
+
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--bg);
+    display: block;
+}
+
+.header {
+    display: flex;
+    justify-content: end;
+}
+
+.navbar{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #fff;
+    width: 30rem;
+    height: calc(50vh - 9.5rem);
+}
+
+.navbar .active{
+    right: 0;
+}
+
+.navbar a{
+    display: block;
+    margin: 1.5rem;
+}
+
+nav > div{
+    display: flex;
+}
+
 
 div#logo > img{
     border-radius: 75%;
+    width: 150px;
 }
 
-.box {
+.noticia {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
@@ -22,10 +69,3 @@ footer, footer > a > i, footer > a{
     color: #fff;
     background-color: black;
 }
-
-.noticia-1 {
-
-    
-
-}
-
