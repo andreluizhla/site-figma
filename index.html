@@ -8,66 +8,72 @@
     <link rel="stylesheet" href="style.css">
     <title>Projeto Site Figma</title>
 </head>
-<body>
+<body id="body">
     <header class="header">
-        <nav class="navbar">
-            <a href="#">Mais Vistos</a>
-            <a href="#">Destaques</a>
-            <a href="#">Últimas Notícias</a>
+        <nav class="navbar navbar-normal">
+            <a href="#"><i class="fa-regular fa-eye"></i> Mais Vistos</a>
+            <a href="#"><i class="fa-regular fa-star"></i> Destaques</a>
+            <a href="#"><i class="fa-regular fa-newspaper"></i> Últimas Notícias</a>
         </nav>
-            <div id="menu-btn">
+        <div class="content">
                 <button class="btn btn-menu">
-                    <i class="fa fa-bars"></i> Menu
+                    <i class="fa fa-bars"></i><br> Menu
                 </button>
-            </div>
-            <div>
-                <a href="#">
-                    <i class="fa-solid fa-house"></i>Início
-                </a>
-            </div>
-            <div id="logo-menu">
-                <img src="img/logo.png" alt="logo" class="logo">
-            </div>
-            <div>
-                <button id="toggle-theme" class="btn btn-theme">
-                    <i class="fa fa-moon"></i> Modo Noturno
-                </button>
-            </div>
-            <div >
                 <button class="btn">
-                    <i class="fas fa-search" id="search-btn"></i> Pesquisa
+                    <a href="#" class="links">
+                        <i class="fa-solid fa-house"></i><br>Início
+                    </a>
                 </button>
-            </div>
+        </div>
+        <div class="content">
+                <button id="toggle-theme" class="btn btn-theme ">
+                    <i class="fa fa-moon"></i><br> Modo Noturno
+                </button>
+                <button class="btn btn-search">
+                    <i class="fas fa-search" id="search-btn"></i><br> Pesquisa
+                </button>
+        </div>
+        <div class="search-form">
+            <i for="search-box" class="fas fa-search"></i>
+            <input type="search" id="search-box" placeholder="Digite o título da notícia...">
+        </div>
     </header>
-    <div id="logo">
-        <img src="img/logo.png" alt="logo" class="logo">
+    <section class="ghost"></section>
+    <section id="bem-vindo">
+        <img src="img/logo.png" alt="logo" class="logo" id="logo-main">
         <h1>Bem vindo ao Games News</h1>
-    </div>
-    <p>Nosso site de notícias traz as últimas notícias com análises detalhadas, 
-    coberturas de eventos importantes e entrevistas exclusivas do universo gamer.</p>
+        <p>Nosso site de notícias traz as últimas notícias com análises detalhadas,
+        coberturas de eventos importantes e entrevistas exclusivas do universo gamer.</p>
+    </section>
 
     <section id="noticias-destaques">
         <h2>Destaques:</h2>
         <div class="noticia">
-            <img src="img/pessiams-noticias.jpg" alt="">
-            <p>Jogos exclusivas</p>
+            <a href="#">
+                <img src="img/pessimas-noticias.jpg" alt="">
+                <p class="texto-not">Jogos exclusivas</p>
+            </a>
         </div>
         <div class="noticia">
-            <img src="img/gta6.jpeg" alt="">
-            <p>O novo GTA 6 terá lançamento somente no PS5</p>
+            <a href="#">
+                <img src="img/gta6.jpeg" alt="">
+                <p class="texto-not">O novo GTA 6 terá lançamento somente no PS5</p>
+            </a>
         </div>
-
-
-
+    </section>
     <section id="ultimas-noticias">
-        <h3>Últimas Notícias:</h3>
+        <h2>Últimas Notícias:</h2>
         <div class="noticia">
-            <img src="img/jogos-gratis.jpg" alt="">
-            <p>Jogos gratis na Steam e Epic Games, quais valem a pena comprar?</p>
+            <a href="#">
+                <img src="img/jogos-gratis.jpg" alt="">
+                <p class="texto-not">Jogos gratis na Steam e Epic Games, quais valem a pena comprar?</p>
+            </a>
         </div>
         <div class="noticia">
-            <img src="img/cuidado-xbox.jpg" alt="">
-            <p>Jogos de XBOX Seriaes que esão de graça para PC</p>
+            <a href="#">
+                <img src="img/cuidado-xbox.jpg" alt="">
+                <p class="texto-not">Jogos de XBOX Seriaes que esão de graça para PC</p>
+            </a>
         </div>
 
     </section> 
