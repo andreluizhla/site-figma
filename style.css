@@ -208,7 +208,7 @@ p.texto-not{
 
 @media (min-width:790px){
     .noticia{
-        margin: 1.6rem 0;
+        margin: 1.6rem 3rem;
         max-width: min-content;
     }
     
@@ -216,9 +216,4 @@ p.texto-not{
         width: 100vw;
     }
     
-    img{
-        max-width: 500px;
-        width: 500px;
-        text-align: center;
-    }
 }
