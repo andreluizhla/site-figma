@@ -222,9 +222,3 @@ p.texto-not{
         text-align: center;
     }
 }
-
-@media (min-width:1200px){
-    body{
-        font-size: 1.3rem;
-    }
-}
