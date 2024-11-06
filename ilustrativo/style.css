@@ -1,0 +1,16 @@
+.main-content{
+    max-width: 700px;
+    text-align: center;
+    margin: auto;
+}
+
+a.texto-not{
+    color: blue;
+    text-decoration: underline;
+    z-index: 1;
+}
+
+a.texto-not.escuro{
+    color: aqua;
+    z-index: 2;
+}
