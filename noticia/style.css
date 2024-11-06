@@ -28,6 +28,6 @@ div.noticia {
 
 @media (max-width: 650px){
     iframe{
-        width: 100%;
+        width: 85%;
     }
 }
