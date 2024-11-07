@@ -60,12 +60,12 @@ body{
 
 .navbar-normal{
     transition: var(--transicao-geral);
-    background: linear-gradient(0deg, #DEF7FF, #4CB1FB 60%);
+    background: linear-gradient(0deg, #DEF7FF, #4CB1FB);
 }
 
 .dark-menu{
     transition: var(--transicao-geral);
-    background: linear-gradient(0deg, #7B8C99, #1D3240 60%);
+    background: linear-gradient(0deg, #7B8C99, #1D3240);
     z-index: 2;
 }
 
@@ -73,9 +73,15 @@ body{
     left: 0%;
 }
 
-.navbar a{
+.navbar > a{
     display: block;
     margin: 1.5rem;
+}
+
+.navbar > a:hover{
+    transition: var(--transicao-body);
+    border-left: 2px solid #fff;
+    padding-left: 7px;
 }
 
 .content{
@@ -94,6 +100,10 @@ body{
     font-size: 1rem;
     max-width: 150px;
     margin: 10px 25px;
+}
+
+.btn:hover{
+    scale: 1.1;
 }
 
 .header .search-form.active{
