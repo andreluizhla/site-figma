@@ -1,5 +1,5 @@
-
 //Variáveis:
+let tema
 const navbar = document.querySelector('.navbar')
 let body = document.querySelector('#body')
 let p = document.querySelectorAll('.texto-not')
@@ -36,7 +36,6 @@ function mudar_tema(){
 
 //Código para se a página estiver escuro ele persistir:
 function armazenarTema(){
-    let tema
     if (body.classList.contains('dark-body')){
         localStorage.setItem('tema', 'escuro')
     } else {
