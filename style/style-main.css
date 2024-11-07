@@ -153,16 +153,6 @@ a{
     color: var(--color1);
 }
 
-.noticia {
-    margin: 2rem 0.5rem;
-    display: inline-flex;
-    max-width: 300px;
-}   
-
-img {
-    max-width: 300px;
-}
-
 p{
     margin: 10px 0 25px;
 }
@@ -214,27 +204,5 @@ header, .btn, footer, footer > a > i, footer > a{
         cursor: pointer;
         font-size: 0.7rem;
     }
-
-    .noticia{
-        display: block;
-        margin: 2rem 0;
-    }
-    
-    .noticia > a > img, .noticia{
-        max-width: 100vw;
-        width: 100vw;
-    }
 }
-
-@media (min-width:790px){
-    .noticia{
-        margin: 1.6rem 3rem;
-        max-width: min-content;
-    }
     
-    .noticia > a > img, .noticia{
-        width: 100vw;
-    }
-    
-}
-
